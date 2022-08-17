@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&family=Shrikhand&display=swap');
+
+body{
+    margin:0px;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+}
+
+h2{
+    font-size: 30px;
+    font-weight: bolder;
+}
+p{
+    font-weight: 100;
+}
+
+header{
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+header img {
+    width:250px;
+}
+article{ 
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+section{
+    padding: 0 20px 0 20px;
+}
+div{
+    width:100%;
+}
+.localisation{
+    font-family: 'roboto';
+    display: flex;
+    justify-content: center;
+    background-color: rgb(229, 227, 227);
+    color: rgb(46, 46, 46) ;
+    font-size: 15px;
+}  
+.fa-location-dot{
+    margin-right: 30px;
+} 
+
+.presentation{
+    text-align: center;
+    background-color: #f2f2f2;
+    height: 300px;
+}
+.presentation button{
+    background: rgb(147,86,220);
+    background: linear-gradient(0deg, rgba(147,86,220,1) 0%, rgba(255,121,218,1) 100%); 
+    padding: 15px 25px;
+    border-radius: 30px 30px;
+    font-size: 20px;
+    color  : white;
+    border: none;
+}
