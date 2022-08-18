@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&family=Shrikhand&display=swap');
+$color-primaire:#9356DC;
+$color-secondaire: #FF79DA;
+$color-terciaire: #99D2E0;
+$color-gris-clair:#f6f6f6;
+$color-gris-foncé:#353535;
+$color-gris:#eaeaea;
+$color-vert-clair:#99e2d0;
+$color-vert:#51b79e;
+
+
+body{
+    margin:0px;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+}
+
+h2{
+    font-size: 30px;
+    font-weight: bolder;
+}
+p{
+    font-weight: 100;
+}
+
+header{
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+header img {
+    width:250px;
+}
+article{ 
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+section{
+    padding: 0 20px 0 20px;
+}
+div{
+    width:100%;
+}
+.localisation{
+    font-family: 'roboto',Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: center;
+    background-color: rgb(229, 227, 227);
+    color: rgb(46, 46, 46) ;
+    font-size: 15px;
+}  
+.fa-location-dot{
+    margin-right: 30px;
+} 
+
+.presentation{
+    text-align: center;
+    background-color: #f2f2f2;
+    height: 300px;
+}
+.presentation button{
+    background: rgb(147,86,220);
+    background: linear-gradient(350deg, rgba(147,86,220,1) 0%, rgba(255,121,218,1) 100%);
+    padding: 15px 25px;
+    border-radius: 30px 30px;
+    font-size: 20px;
+    color  : white;
+    border: none;
+}
+
+section{
+    width: 100%;
+}
+
+.etapes_commande{
+    font-weight: bold;
+    background-color: #f2f2f2;
+    box-shadow: 1px 1px 1px ;
+    border-radius: 20px 20px;
+    width: 100%;
+    height: 60px;
+    margin-bottom: 30px;
+    margin-left: 8px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.etapes_commande i{
+    margin: 0 20px;
+}
+
+.etapes_commande:hover{
+    background-color:#f5c8ff24
+}
+
+.fa-list-ul, .fa-mobile-screen-button{
+    color:rgb(130, 130, 130)
+}
+
+.fa-store{
+    color: rgb(147,86,220);
+}
+
+span{
+    color: rgb(147,86,220);
+    font-weight: normal;
+    margin-left: -10px;
+}
+
+.liste_restaurants{
+    background-color: #f2f2f2;
+    width: 100%;
+    padding-top: 30px;
+    padding-bottom: 60px;
+}
+
+.choix_restaurant{
+    border-radius: 20px 20px;
+    border: 1px solid #ccc;
+    overflow: hidden;
+    
+}
+.choix_restaurant img{
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    
+}
+
+footer{
+    background-color: rgb(67, 67, 67);
+    color: white;
+    padding: 10px 25px;
+    height: 220px;
+    line-height: 30px;
+}
+
+h4{
+    font-family:'shrikhand';
+    font-size: 18px;
+}
+
+footer a{
+    color: white;
+    text-decoration: none;
+    white-space: 30px;
+    font-weight: 400;
+    
+}
