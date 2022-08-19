@@ -88,6 +88,7 @@ div{
             font-size: 20px;
             color  : white;
             border: none;
+            cursor: pointer;
         }
 }
 
@@ -112,15 +113,23 @@ div{
     background-color:#f5edff;
     }
     span{
-    font-weight: normal;
-    margin-left: -13px;
-    font-size: 17px;
+        display: flex;
+        background-color: $color-primaire;
+        color:white;
+        border-radius: 50% 50%;
+        width: 25px;
+        height: 25px;
+        margin-left: -10px;
+        font-size: 17px;
+        justify-content: center;
+        align-items: center;
+        font-weight: normal;
     }
     .fa-list-ul, .fa-mobile-screen-button{
         color:$color-gris-icon;
     }
 
-    .fa-store, span{
+    .fa-store{
         color: $color-primaire;
     }
     p{
@@ -128,14 +137,14 @@ div{
     }
 }
 
-.liste_restaurants{
+#restaurants{
     background-color: $color-gris-clair;
     width: 100%;
     padding-top: 30px;
     padding-bottom: 60px;
     
     .choix_restaurant{
-        max-width: 400px;
+        width: 320px;
         border-radius: 20px 20px;
         border: 1px solid #ccc;
         overflow: hidden;
@@ -145,27 +154,27 @@ div{
     }
     img{
         width: 100%;
-        height: 170px;
-        object-fit: cover;  
+        height: 160px;
+        object-fit: cover;
+        object-position:bottom;  
     }
+    .img-lanoteenchantée{
+        object-fit: cover;
+        object-position: center;
+    }
+
     .img_nouveau{
-        height :170px;
-        width: auto;
-        
-        background-size: cover;
-        background-position: center;
-        display: flex;
+        height: 160px;
+        width: 100%;
     }
-    .A-la-francaise{
-        background-image: url(../images/restaurants/À_la_française.jpg);
-    }
+
     .nouveau{
         display: flex;
         justify-content: center;
         align-items: center;
         position: relative;
-        top: 15px;
-        left: 70%;
+        top: -140px;
+        left: 225px;
         color :#028867;
         background-color: $color-terciaire;
         width:80px;
@@ -179,7 +188,7 @@ div{
         display: flex;
     }
     .nom_localisation{
-        margin-left: 20px;;
+        margin-left: 20px;
     }
     p{
         margin-top: 5px;
@@ -188,7 +197,8 @@ div{
         display: flex;
         justify-content: end;
         align-items: center;
-        margin : -10px 25px 0 0;    
+        margin : -10px 25px 0 0;
+        width: 60px;    
     }
     i{
         color :$color-gris-foncé;
