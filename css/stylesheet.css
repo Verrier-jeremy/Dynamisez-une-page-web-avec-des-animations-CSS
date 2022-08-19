@@ -18,6 +18,7 @@ header {
   display: flex;
   justify-content: center;
   padding: 20px;
+  box-shadow: 0px 50px 50px rgba(0, 0, 0, 0.3);
 }
 header img {
   width: 250px;
@@ -30,7 +31,8 @@ article {
 }
 
 section {
-  padding: 0 20px 0 20px;
+  padding: 40px 30px;
+  width: 100%;
 }
 
 div {
@@ -44,6 +46,7 @@ div {
   background-color: #eaeaea;
   color: #353535;
   font-size: 14px;
+  box-shadow: 0px -3px 3px rgba(0, 0, 0, 0.3);
 }
 .localisation h2 {
   font-size: 23px;
@@ -55,7 +58,7 @@ div {
 .presentation {
   text-align: center;
   background-color: #f6f6f6;
-  height: 300px;
+  height: 310px;
   padding: 25px;
 }
 .presentation h2 {
@@ -73,10 +76,6 @@ div {
   font-size: 20px;
   color: white;
   border: none;
-}
-
-section {
-  width: 100%;
 }
 
 .etapes_commande {
