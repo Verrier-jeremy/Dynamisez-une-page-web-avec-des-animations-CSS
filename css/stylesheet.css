@@ -21,7 +21,7 @@ header {
   box-shadow: 0px 50px 50px rgba(0, 0, 0, 0.3);
 }
 header img {
-  width: 250px;
+  width: 150px;
 }
 
 article {
@@ -45,14 +45,13 @@ div {
   justify-content: center;
   background-color: #eaeaea;
   color: #353535;
-  font-size: 14px;
   box-shadow: 0px -3px 3px rgba(0, 0, 0, 0.3);
 }
 .localisation h2 {
-  font-size: 23px;
+  font-size: 20px;
 }
 .localisation .fa-location-dot {
-  margin-right: 30px;
+  margin-right: 20px;
 }
 
 .presentation {
@@ -62,10 +61,10 @@ div {
   padding: 25px;
 }
 .presentation h2 {
-  margin: 25px 10% 20px 10%;
+  margin: 25px 8% 20px 8%;
 }
 .presentation p {
-  font-size: 22px;
+  font-size: 20px;
   margin-bottom: 35px;
 }
 .presentation button {
@@ -81,10 +80,10 @@ div {
 .etapes_commande {
   font-weight: bold;
   background-color: #f6f6f6;
-  box-shadow: 1px 1px 1px;
+  box-shadow: 5px 5px 5px rgba(53, 53, 53, 0.1333333333);
   border-radius: 20px 20px;
   width: 100%;
-  height: 60px;
+  height: 80px;
   margin-bottom: 30px;
   margin-left: 8px;
   display: flex;
@@ -97,15 +96,15 @@ div {
   color: #7e7e7e;
 }
 .etapes_commande:hover {
-  background-color: rgba(245, 200, 255, 0.1411764706);
+  background-color: #f5edff;
 }
 .etapes_commande span {
   font-weight: normal;
   margin-left: -13px;
-  font-size: 20px;
+  font-size: 17px;
 }
 .etapes_commande .fa-list-ul, .etapes_commande .fa-mobile-screen-button {
-  color: #353535;
+  color: #7e7e7e;
 }
 .etapes_commande .fa-store, .etapes_commande span {
   color: #9356DC;
