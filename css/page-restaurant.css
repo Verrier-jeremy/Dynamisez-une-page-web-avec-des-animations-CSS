@@ -6,13 +6,13 @@ body {
 
 header {
   display: flex;
+  align-items: baseline;
   width: 100%;
   margin: -10px 30px;
 }
 header button {
   border-style: none;
   background-color: white;
-  justify-self: start;
 }
 header i {
   font-size: 25px;
@@ -20,6 +20,7 @@ header i {
 header a {
   text-decoration: none;
   color: #353535;
+  cursor: pointer;
 }
 header .titre {
   display: flex;
@@ -39,6 +40,25 @@ article .carte-restaurant {
   border-radius: 20px 20px;
   position: relative;
   top: -60px;
+  display: flex;
+  flex-direction: column;
+}
+article .carte-restaurant .commander {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+article .carte-restaurant button {
+  background: rgb(255, 121, 218);
+  background: linear-gradient(170deg, rgb(255, 121, 218) 0%, rgb(147, 86, 220) 80%);
+  padding: 15px 25px;
+  border-radius: 30px 30px;
+  font-size: 16px;
+  width: 180px;
+  color: white;
+  border: none;
+  cursor: pointer;
+  margin: 20px 0 60px 0;
 }
 article .titre-restaurant {
   display: flex;
@@ -51,28 +71,101 @@ article .titre-restaurant {
 article .titre-restaurant i {
   color: #7e7e7e;
   margin-right: 20px;
+  font-size: 30px;
 }
 
 .liste {
-  margin: 0 20px;
+  margin: 0 40px 10px 20px;
 }
 .liste h3 {
   font-weight: 300;
-  border-bottom: 5px solid #99D2E0;
+}
+.liste h3 span {
+  border-bottom: 4px solid #99e2d0;
 }
 .liste .choix-carte {
+  cursor: pointer;
+  width: 100%;
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
   justify-content: space-between;
   background-color: white;
   border-radius: 20px 20px;
   box-shadow: 3px 3px 10px #eaeaea;
-  padding: 5px 15px 0 10px;
-  margin-bottom: 15px;
+  padding: 15px 15px 0 10px;
+  margin-bottom: 20px;
+  overflow: hidden;
+}
+.liste .description {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  width: 80%;
+}
+.liste .descriptif-prix {
+  display: flex;
+  justify-content: space-between;
+}
+.liste .prix {
+  margin-left: auto;
+  margin-right: 10px;
 }
 .liste h4 {
-  font-size: 20px;
-  width: 100%;
-  margin: 0 0 -10px 0;
+  font-size: 18px;
+  margin: 0 -10px -10px 0;
   font-weight: bold;
+}
+.liste .animation-selection {
+  position: relative;
+  left: 15px;
+  top: -27px;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  width: 70px;
+  height: 85px;
+  margin-bottom: -32px;
+  background-color: #99e2d0;
+  color: #99e2d0;
+}
+.liste i {
+  font-size: 27px;
+  background-color: white;
+  border-radius: 20px 20px;
+  /* animation: rotate-center 0.6s ease-in-out both;*/
+}
+
+footer {
+  margin-top: -60px;
+  background-color: #353535;
+  color: white;
+  padding: 10px 25px;
+  height: 220px;
+  line-height: 30px;
+}
+footer a {
+  color: white;
+  text-decoration: none;
+  white-space: 30px;
+  font-weight: 400;
+  font-size: 18px;
+}
+footer h4 {
+  font-family: "shrikhand";
+  font-size: 18px;
+}
+footer .fa-utensils {
+  font-size: 15px;
+  margin-right: 20px;
+}
+footer .fa-handshake-angle {
+  font-size: 12px;
+  margin-right: 17px;
+}
+footer .liste-footer {
+  display: flex;
+  flex-direction: column;
+}
+footer .lien-fin {
+  font-weight: 300;
 }/*# sourceMappingURL=page-restaurant.css.map */
