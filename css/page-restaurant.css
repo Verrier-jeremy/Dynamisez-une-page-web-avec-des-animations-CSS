@@ -1,0 +1,78 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&family=Shrikhand&display=swap");
+body {
+  margin: 0;
+  font-family: "roboto";
+}
+
+header {
+  display: flex;
+  width: 100%;
+  margin: -10px 30px;
+}
+header button {
+  border-style: none;
+  background-color: white;
+  justify-self: start;
+}
+header i {
+  font-size: 25px;
+}
+header a {
+  text-decoration: none;
+  color: #353535;
+}
+header .titre {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-left: -50px;
+  font-family: "Shrikhand";
+}
+
+article img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+}
+article .carte-restaurant {
+  background-color: #f6f6f6;
+  border-radius: 20px 20px;
+  position: relative;
+  top: -60px;
+}
+article .titre-restaurant {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  padding: 0 20px;
+  font-family: "Shrikhand";
+  font-size: 20px;
+}
+article .titre-restaurant i {
+  color: #7e7e7e;
+  margin-right: 20px;
+}
+
+.liste {
+  margin: 0 20px;
+}
+.liste h3 {
+  font-weight: 300;
+  border-bottom: 5px solid #99D2E0;
+}
+.liste .choix-carte {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background-color: white;
+  border-radius: 20px 20px;
+  box-shadow: 3px 3px 10px #eaeaea;
+  padding: 5px 15px 0 10px;
+  margin-bottom: 15px;
+}
+.liste h4 {
+  font-size: 20px;
+  width: 100%;
+  margin: 0 0 -10px 0;
+  font-weight: bold;
+}/*# sourceMappingURL=page-restaurant.css.map */

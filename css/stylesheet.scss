@@ -203,9 +203,11 @@ div{
     i{
         color :$color-gris-foncé;
         font-size: 30px;
+        cursor: pointer;
+    }
+    i:hover{
         
-       
-
+        color: linear-gradient(170deg, rgba(255,121,218,1) 0%, rgba(147,86,220,1) 50%); 
     }  
 }
 footer{
