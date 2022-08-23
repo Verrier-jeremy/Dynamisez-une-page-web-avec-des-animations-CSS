@@ -1,4 +1,51 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&family=Shrikhand&display=swap");
+header {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  box-shadow: 0px 50px 50px rgba(0, 0, 0, 0.3);
+}
+header img {
+  width: 150px;
+}
+header h1 {
+  font-family: "Shrikhand";
+}
+
+footer {
+  background-color: #353535;
+  color: white;
+  padding: 10px 25px;
+  height: 220px;
+  line-height: 30px;
+}
+footer a {
+  color: white;
+  text-decoration: none;
+  white-space: 30px;
+  font-weight: 400;
+  font-size: 18px;
+}
+footer h4 {
+  font-family: "shrikhand";
+  font-size: 18px;
+}
+footer .fa-utensils {
+  font-size: 15px;
+  margin-right: 20px;
+}
+footer .fa-handshake-angle {
+  font-size: 12px;
+  margin-right: 17px;
+}
+footer .liste-footer {
+  display: flex;
+  flex-direction: column;
+}
+footer .lien-fin {
+  font-weight: 300;
+}
+
 body {
   margin: 0;
   font-family: "roboto";
@@ -133,39 +180,4 @@ article .titre-restaurant i {
   background-color: white;
   border-radius: 20px 20px;
   /* animation: rotate-center 0.6s ease-in-out both;*/
-}
-
-footer {
-  margin-top: -60px;
-  background-color: #353535;
-  color: white;
-  padding: 10px 25px;
-  height: 220px;
-  line-height: 30px;
-}
-footer a {
-  color: white;
-  text-decoration: none;
-  white-space: 30px;
-  font-weight: 400;
-  font-size: 18px;
-}
-footer h4 {
-  font-family: "shrikhand";
-  font-size: 18px;
-}
-footer .fa-utensils {
-  font-size: 15px;
-  margin-right: 20px;
-}
-footer .fa-handshake-angle {
-  font-size: 12px;
-  margin-right: 17px;
-}
-footer .liste-footer {
-  display: flex;
-  flex-direction: column;
-}
-footer .lien-fin {
-  font-weight: 300;
 }/*# sourceMappingURL=page-restaurant.css.map */

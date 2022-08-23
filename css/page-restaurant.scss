@@ -1,14 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&family=Shrikhand&display=swap');
-
-$color-primaire:#9356DC;
-$color-secondaire: #FF79DA;
-$color-terciaire: #99D2E0;
-$color-gris-clair:#f6f6f6;
-$color-gris-foncé:#353535;
-$color-gris:#eaeaea;
-$color-gris-icon:#7e7e7e;
-$color-vert-clair:#99e2d0;
-$color-vert:#51b79e;
+@import "_couleur.scss";
+@import "_header&footer.scss";
 
 body{
     margin:0;
@@ -156,44 +148,5 @@ article{
         background-color: white;
         border-radius: 20px 20px;
        /* animation: rotate-center 0.6s ease-in-out both;*/
-    }
-}
-
-
-footer{
-    margin-top: -60px;
-    background-color: $color-gris-foncé;
-    color :white;
-    padding: 10px 25px;
-    height: 220px;
-    line-height: 30px;
-    a{
-        color: white;
-        text-decoration: none;
-        white-space: 30px;
-        font-weight: 400; 
-        font-size: 18px;
-         
-    }
-    h4{
-    font-family:'shrikhand';
-    font-size: 18px;
-    }
-    .fa-utensils{
-        
-        font-size: 15px;
-        margin-right:20px;
-    }
-    .fa-handshake-angle{
-        
-        font-size: 12px;
-        margin-right:17px;
-    }
-    .liste-footer{
-        display: flex;
-        flex-direction: column;
-    }
-    .lien-fin{
-        font-weight: 300;
     }
 }
