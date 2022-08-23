@@ -1,0 +1,25 @@
+.icon-coeur {
+    background-color: #fff;
+    border: none;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    margin: 0px 25px 0 0;
+    width: 60px;
+    .fa-solid{
+    display:none;
+    }
+}
+.icon-coeur:hover, .icon-coeur:focus{
+    
+    .fa-regular{
+        display: none;
+    }
+    .fa-solid{
+        color: transparent;
+        display: block;
+        background-clip: text;
+        background-image: -moz-linear-gradient(90deg, rgba(255, 121, 218, 1) 0%, rgba(147, 86, 220, 1) 100%);
+        transition-duration: 0.5s;
+    }
+}
