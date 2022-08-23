@@ -26,6 +26,8 @@ footer {
   line-height: 30px;
 }
 footer a {
+  text-decoration: none;
+  color: white;
   white-space: 30px;
   font-weight: 400;
   font-size: 18px;
@@ -51,28 +53,28 @@ footer .lien-fin {
 }
 
 .icon-coeur {
-  background-color: #fff;
   border: none;
   display: flex;
   justify-content: end;
   align-items: center;
   margin: 0px 25px 0 0;
   width: 60px;
+  color: #7e7e7e;
+  cursor: pointer;
 }
 .icon-coeur .fa-solid {
   display: none;
+  color: transparent;
+  -webkit-background-clip: text;
+          background-clip: text;
+  background-image: -moz-linear-gradient(90deg, rgb(255, 121, 218) 0%, rgb(147, 86, 220) 100%);
 }
 
 .icon-coeur:hover .fa-regular, .icon-coeur:focus .fa-regular {
   display: none;
 }
 .icon-coeur:hover .fa-solid, .icon-coeur:focus .fa-solid {
-  color: transparent;
-  display: block;
-  -webkit-background-clip: text;
-          background-clip: text;
-  background-image: -moz-linear-gradient(90deg, rgb(255, 121, 218) 0%, rgb(147, 86, 220) 100%);
-  transition-duration: 0.5s;
+  display: flex;
 }
 
 body {
@@ -107,12 +109,11 @@ article img {
   -o-object-fit: cover;
      object-fit: cover;
   width: 100%;
+  margin-bottom: 0px;
 }
 article .carte-restaurant {
   background-color: #f6f6f6;
   border-radius: 20px 20px;
-  position: relative;
-  top: -60px;
   display: flex;
   flex-direction: column;
 }
@@ -149,6 +150,14 @@ article .titre-restaurant i {
 
 .liste {
   margin: 0 40px 10px 20px;
+}
+.liste .animation-choix-carte {
+  transform: scale(1);
+  transition-property: transform;
+  transition-duration: 3000ms;
+}
+.liste .animation-choix-carte :hover {
+  transform: scale(0.5);
 }
 .liste h3 {
   font-weight: 300;
