@@ -71,11 +71,46 @@ footer .lien-fin {
   background-image: -moz-linear-gradient(90deg, rgb(255, 121, 218) 0%, rgb(147, 86, 220) 100%);
 }
 
+@-webkit-keyframes grandissement {
+  0% {
+    transform: scale(0);
+  }
+  50% {
+    transform: scale(1);
+  }
+  75% {
+    transform: scale(0.6);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes grandissement {
+  0% {
+    transform: scale(0);
+  }
+  50% {
+    transform: scale(1);
+  }
+  75% {
+    transform: scale(0.6);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
 .icon-coeur:hover .fa-regular, .icon-coeur:focus .fa-regular {
   display: none;
 }
-.icon-coeur:hover .fa-solid, .icon-coeur:focus .fa-solid {
+.icon-coeur:hover .fa-beat, .icon-coeur:focus .fa-beat {
+  -webkit-animation-name: grandissement;
+          animation-name: grandissement;
   display: flex;
+  -webkit-animation-duration: 0.5s;
+          animation-duration: 0.5s;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
 }
 
 body {

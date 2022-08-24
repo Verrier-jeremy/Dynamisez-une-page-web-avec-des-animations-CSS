@@ -16,11 +16,24 @@
         }
     }
     .icon-coeur:hover, .icon-coeur:focus{
+
+        @keyframes grandissement {
+            0%{transform: scale(0);}
+            50%{transform: scale(1);}
+            75%{transform: scale(0.6); }
+            100%{transform: scale(1);}
+            
+        }
         
         .fa-regular{
             display: none;
         }
-        .fa-solid{            
-            display: flex;           
+        .fa-beat{   
+            animation-name: grandissement;                   
+            display: flex;
+            animation-duration: 0.5s;
+            animation-iteration-count: 1;
+            
+            
         }
     }
