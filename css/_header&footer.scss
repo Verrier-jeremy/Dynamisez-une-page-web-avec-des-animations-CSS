@@ -5,8 +5,8 @@ header{
     
     h1{
         font-family:'Shrikhand';
-        font-size: 38px;
-        margin: 15px 0 10px 0px;     
+        font-size: 30px;
+        margin: 15px 0 10px -10px;     
     }
     .retour{
         position: relative;
@@ -22,19 +22,19 @@ header{
 footer{
     background-color: $color-gris-foncé;
     color :white;
-    padding: 10px 25px;
+    padding: 2px 25px;
     height: 220px;
     line-height: 30px;
     a{
         text-decoration: none;
         color: white;
-        white-space: 30px;
-        font-weight: 400; 
-        font-size: 18px;  
+        line-height: 30px;
+        font-weight: 500; 
+        font-size: 20px;  
     }
     h4{
     font-family:'shrikhand';
-    font-size: 18px;
+    font-size: 22px;
     }
     .fa-utensils{
         
@@ -49,8 +49,7 @@ footer{
     .liste-footer{
         display: flex;
         flex-direction: column;
+        margin-top : -10px;
     }
-    .lien-fin{
-        font-weight: 300;
-    }
+   
 }

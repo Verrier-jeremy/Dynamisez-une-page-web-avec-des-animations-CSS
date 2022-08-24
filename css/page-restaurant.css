@@ -6,8 +6,8 @@ header {
 }
 header h1 {
   font-family: "Shrikhand";
-  font-size: 38px;
-  margin: 15px 0 10px 0px;
+  font-size: 30px;
+  margin: 15px 0 10px -10px;
 }
 header .retour {
   position: relative;
@@ -21,20 +21,20 @@ header img {
 footer {
   background-color: #353535;
   color: white;
-  padding: 10px 25px;
+  padding: 2px 25px;
   height: 220px;
   line-height: 30px;
 }
 footer a {
   text-decoration: none;
   color: white;
-  white-space: 30px;
-  font-weight: 400;
-  font-size: 18px;
+  line-height: 30px;
+  font-weight: 500;
+  font-size: 20px;
 }
 footer h4 {
   font-family: "shrikhand";
-  font-size: 18px;
+  font-size: 22px;
 }
 footer .fa-utensils {
   font-size: 15px;
@@ -47,9 +47,7 @@ footer .fa-handshake-angle {
 footer .liste-footer {
   display: flex;
   flex-direction: column;
-}
-footer .lien-fin {
-  font-weight: 300;
+  margin-top: -10px;
 }
 
 .icon-coeur {
@@ -60,13 +58,14 @@ footer .lien-fin {
   margin: 0px 25px 0 0;
   width: 60px;
   color: #7e7e7e;
-  cursor: pointer;
+  cursor: pointer bold;
 }
 .icon-coeur .fa-solid {
   display: none;
   color: transparent;
   -webkit-background-clip: text;
           background-clip: text;
+  background-image: linear-gradient(0deg, rgb(255, 121, 218) 0%, rgb(147, 86, 220) 100%);
   background-image: -moz-linear-gradient(90deg, rgb(255, 121, 218) 0%, rgb(147, 86, 220) 100%);
 }
 
@@ -78,7 +77,7 @@ footer .lien-fin {
     transform: scale(1);
   }
   75% {
-    transform: scale(0.6);
+    transform: scale(0.75);
   }
   100% {
     transform: scale(1);
@@ -93,7 +92,7 @@ footer .lien-fin {
     transform: scale(1);
   }
   75% {
-    transform: scale(0.6);
+    transform: scale(0.75);
   }
   100% {
     transform: scale(1);
@@ -112,22 +111,47 @@ footer .lien-fin {
           animation-iteration-count: 1;
 }
 
-@-webkit-keyframes deplacement-horizontale {
+@-webkit-keyframes deplacement-gauche {
   0% {
     transform: translateX(0px);
+    width: 0px;
   }
   100% {
     transform: translateX(-65px);
+    width: 80px;
   }
 }
 
-@keyframes deplacement-horizontale {
+@keyframes deplacement-gauche {
   0% {
     transform: translateX(0px);
+    width: 0px;
   }
   100% {
     transform: translateX(-65px);
+    width: 80px;
   }
+}
+/*@keyframes deplacement-droite {
+    0%{
+        transform: translateX(0px);
+
+    }
+    100%{
+        transform: translateX(0px);
+        width: 0px;
+
+    }
+
+}*/
+.choix-carte {
+  /*.animation-selection{
+          animation-name: deplacement-droite;
+          animation-duration: 0.5s;
+          animation-direction: alternate;
+          animation-iteration-count: 1;
+          animation-fill-mode: both;
+  */
 }
 .choix-carte:hover .animation-selection {
   display: flex;
@@ -135,10 +159,16 @@ footer .lien-fin {
           animation-fill-mode: both;
   -webkit-animation-duration: 0.5s;
           animation-duration: 0.5s;
-  -webkit-animation-name: deplacement-horizontale;
-          animation-name: deplacement-horizontale;
+  -webkit-animation-name: deplacement-gauche;
+          animation-name: deplacement-gauche;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
 }
-.choix-carte:hover i {
+.choix-carte:hover .fa-spin-pulse {
+  display: flex;
+  color: #99e2d0;
   -webkit-animation-duration: 400ms;
           animation-duration: 400ms;
   -webkit-animation-iteration-count: 1;
@@ -216,7 +246,6 @@ article .titre-restaurant {
 }
 article .titre-restaurant i {
   color: #7e7e7e;
-  margin-right: 20px;
   font-size: 30px;
 }
 
@@ -229,7 +258,27 @@ article .titre-restaurant i {
 .liste h3 span {
   border-bottom: 4px solid #99e2d0;
 }
+@-webkit-keyframes choix-menu {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes choix-menu {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 .liste .choix-carte {
+  -webkit-animation-name: choix-menu;
+          animation-name: choix-menu;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
   cursor: pointer;
   width: 100%;
   display: flex;
@@ -243,6 +292,10 @@ article .titre-restaurant i {
   overflow: hidden;
 }
 .liste .description {
+  -webkit-animation-duration: 500ms;
+          animation-duration: 500ms;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
   text-overflow: ellipsis;
   overflow: hidden;
   white-space: nowrap;
@@ -251,6 +304,7 @@ article .titre-restaurant i {
 .liste .descriptif-prix {
   display: flex;
   justify-content: space-between;
+  width: 100%;
 }
 .liste .prix {
   margin-left: auto;
@@ -263,19 +317,20 @@ article .titre-restaurant i {
 }
 .liste .animation-selection {
   position: relative;
-  left: 82px;
+  left: 80px;
   top: -27px;
-  display: none;
+  display: flex;
   justify-content: center;
   align-items: center;
-  width: 70px;
+  width: 0px;
   height: 78px;
   margin-bottom: -32px;
   background-color: #99e2d0;
   color: #99e2d0;
 }
-.liste i {
+.liste .fa-circle-check {
+  color: transparent;
   font-size: 27px;
   background-color: white;
-  border-radius: 20px 20px;
+  border-radius: 50%;
 }/*# sourceMappingURL=page-restaurant.css.map */

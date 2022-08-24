@@ -77,7 +77,6 @@ article{
         
         i{
             color: $color-gris-icon;
-            margin-right:20px;
             font-size: 30px;
         }
     }
@@ -92,8 +91,19 @@ article{
           border-bottom: 4px solid $color-vert-clair;  
         }        
     }
-    .choix-carte{
 
+    @keyframes choix-menu {
+        0%{
+            opacity: 0;
+        }
+        100%{
+        opacity: 1;
+        }
+        
+    }
+    .choix-carte{
+        animation-name: choix-menu;
+        animation-duration: 2s;
         cursor: pointer;
         width: 100%;
         display: flex;
@@ -104,9 +114,12 @@ article{
         box-shadow: 3px 3px 10px $color-gris; 
         padding: 15px 15px 0 10px;
         margin-bottom: 20px;
-        overflow: hidden;        
+        overflow: hidden;  
+          
     }
     .description{
+        animation-duration: 500ms;
+        animation-timing-function: linear;
         text-overflow: ellipsis;
         overflow: hidden;
         white-space: nowrap;
@@ -114,7 +127,8 @@ article{
     }
     .descriptif-prix{       
         display: flex;
-        justify-content: space-between;       
+        justify-content: space-between;
+        width: 100%;       
         }   
     .prix{
         margin-left: auto;
@@ -128,24 +142,26 @@ article{
     }
     .animation-selection{
         position: relative;
-        left: 82px;
+        left: 80px;
         top: -27px;
-        display: none;
+        display: flex;
         justify-content:center;
         align-items: center;
-        width: 70px;
+        width: 0px;
         height: 78px;
         margin-bottom: -32px;
         background-color:$color-vert-clair;
-        color: $color-vert-clair
-       
+        color: $color-vert-clair;
         
         
     }
-    i{  
+    .fa-circle-check{  
+        color: transparent;
         font-size: 27px;
         background-color: white;
-        border-radius: 20px 20px;
+        border-radius:50%;
+        
+        
         
        
     }
