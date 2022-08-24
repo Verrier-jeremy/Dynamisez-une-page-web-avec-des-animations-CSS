@@ -177,6 +177,100 @@ footer .liste-footer {
           animation-timing-function: linear;
 }
 
+@-webkit-keyframes choix-1 {
+  0% {
+    transform: translateY(30px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
+@keyframes choix-1 {
+  0% {
+    transform: translateY(30px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+@-webkit-keyframes choix-2 {
+  0% {
+    transform: translateY(30px);
+    opacity: 0;
+  }
+  33% {
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+@keyframes choix-2 {
+  0% {
+    transform: translateY(30px);
+    opacity: 0;
+  }
+  33% {
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+@-webkit-keyframes choix-3 {
+  0% {
+    transform: translateY(30px);
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+@keyframes choix-3 {
+  0% {
+    transform: translateY(30px);
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+.choix-1 {
+  -webkit-animation-name: choix-1;
+          animation-name: choix-1;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+}
+
+.choix-2 {
+  -webkit-animation-name: choix-2;
+          animation-name: choix-2;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+}
+
+.choix-3 {
+  -webkit-animation-name: choix-3;
+          animation-name: choix-3;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+}
+
 body {
   margin: 0;
   font-family: "roboto";
@@ -258,27 +352,7 @@ article .titre-restaurant i {
 .liste h3 span {
   border-bottom: 4px solid #99e2d0;
 }
-@-webkit-keyframes choix-menu {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-@keyframes choix-menu {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
 .liste .choix-carte {
-  -webkit-animation-name: choix-menu;
-          animation-name: choix-menu;
-  -webkit-animation-duration: 2s;
-          animation-duration: 2s;
   cursor: pointer;
   width: 100%;
   display: flex;

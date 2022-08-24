@@ -3,6 +3,7 @@
 @import "_header&footer.scss";
 @import "_icon-coeur.scss";
 @import "_validation-menu.scss";
+@import "_animation-choix-carte.scss";
 
 body{
     margin:0;
@@ -92,18 +93,9 @@ article{
         }        
     }
 
-    @keyframes choix-menu {
-        0%{
-            opacity: 0;
-        }
-        100%{
-        opacity: 1;
-        }
-        
-    }
+    
+
     .choix-carte{
-        animation-name: choix-menu;
-        animation-duration: 2s;
         cursor: pointer;
         width: 100%;
         display: flex;

@@ -1,0 +1,58 @@
+
+@keyframes choix-1 {
+    0%{
+        transform: translateY(30px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
+@keyframes choix-2 {
+    0%{
+        transform: translateY(30px);
+        opacity: 0;   
+    }
+    33%{
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
+@keyframes choix-3 {
+    0%{
+        transform: translateY(30px);
+        opacity: 0;     
+    }
+    50%{
+        opacity: 0;
+    }
+    
+    100%{
+        transform: translateY(0px);
+    opacity: 1;
+    }
+}
+
+  
+
+    .choix-1{
+        
+        animation-name: choix-1 ;
+        animation-duration: 1s;
+    }
+
+    .choix-2{
+       
+        animation-name: choix-2 ;
+        animation-duration: 1s;
+    }
+    .choix-3{
+        animation-name: choix-3 ;
+        animation-duration: 1s;
+    }
