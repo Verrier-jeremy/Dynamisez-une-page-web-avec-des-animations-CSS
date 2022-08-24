@@ -1,0 +1,27 @@
+@keyframes deplacement-horizontale {
+    0%{
+        transform: translateX(0px);
+    }
+    100%{
+        transform: translateX(-65px);
+    }
+    
+}
+
+.choix-carte{ 
+    
+    &:hover{
+        .animation-selection{
+            
+            display:flex;
+            animation-fill-mode: both;
+            animation-duration: 0.5s;
+            animation-name: deplacement-horizontale;
+        }
+    i{
+        animation-duration: 400ms;
+        animation-iteration-count: 1;
+        animation-timing-function: linear;
+    }
+}
+}

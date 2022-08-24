@@ -2,6 +2,7 @@
 @import "_couleur.scss";
 @import "_header&footer.scss";
 @import "_icon-coeur.scss";
+@import "_validation-menu.scss";
 
 body{
     margin:0;
@@ -37,14 +38,14 @@ article{
     img{
         object-fit: cover;
         width: 100%;
-        margin-bottom: -0px;
+        margin-bottom: -26px;
+        position : relative;
+        z-index: -1;
         
     }
     .carte-restaurant{
         background-color: $color-gris-clair;
         border-radius: 20px 20px;
-        //position: relative;
-       // top: -60px;
         display: flex;
         flex-direction: column;
         .commander{
@@ -84,15 +85,7 @@ article{
 }
 
 .liste{
-    margin: 0 40px 10px 20px; 
-    //.animation-choix-carte{
-    // transform: scale(1);
-       // transition-property: transform;
-       // transition-duration: 3000ms;
-
-        //:hover{transform: scale(0.5);}
-    //}
-   
+    margin: 0 40px 10px 20px;  
     h3{
         font-weight: 300;
         span{
@@ -111,15 +104,7 @@ article{
         box-shadow: 3px 3px 10px $color-gris; 
         padding: 15px 15px 0 10px;
         margin-bottom: 20px;
-        overflow: hidden; 
-
-        // animation
-
-       
-        
-
-
-        
+        overflow: hidden;        
     }
     .description{
         text-overflow: ellipsis;
@@ -127,12 +112,10 @@ article{
         white-space: nowrap;
         width: 80%;
     }
-    .descriptif-prix{
-        
+    .descriptif-prix{       
         display: flex;
-        justify-content: space-between;
-        
-    }
+        justify-content: space-between;       
+        }   
     .prix{
         margin-left: auto;
         margin-right:10px;
@@ -145,13 +128,13 @@ article{
     }
     .animation-selection{
         position: relative;
-        left: 15px;
+        left: 82px;
         top: -27px;
         display: none;
         justify-content:center;
         align-items: center;
         width: 70px;
-        height: 85px;
+        height: 78px;
         margin-bottom: -32px;
         background-color:$color-vert-clair;
         color: $color-vert-clair
@@ -163,9 +146,7 @@ article{
         font-size: 27px;
         background-color: white;
         border-radius: 20px 20px;
-        animation-duration: 500ms;
-        animation-iteration-count: 1;
-        animation-timing-function: linear;
+        
        
     }
 }
