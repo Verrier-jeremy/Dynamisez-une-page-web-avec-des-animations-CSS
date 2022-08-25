@@ -59,7 +59,7 @@ footer .liste-footer {
   margin: 0px 25px 0 0;
   width: 60px;
   color: #7e7e7e;
-  cursor: pointer bold;
+  cursor: pointer;
 }
 .icon-coeur .fa-solid {
   display: none;
@@ -73,6 +73,9 @@ footer .liste-footer {
 @-webkit-keyframes grandissement {
   0% {
     transform: scale(0);
+  }
+  40% {
+    transform: scale(0.5);
   }
   50% {
     transform: scale(1);
@@ -89,6 +92,9 @@ footer .liste-footer {
   0% {
     transform: scale(0);
   }
+  40% {
+    transform: scale(0.5);
+  }
   50% {
     transform: scale(1);
   }
@@ -99,10 +105,10 @@ footer .liste-footer {
     transform: scale(1);
   }
 }
-.icon-coeur:hover .fa-regular, .icon-coeur:focus .fa-regular {
+.icon-coeur:hover .fa-regular {
   display: none;
 }
-.icon-coeur:hover .fa-beat, .icon-coeur:focus .fa-beat {
+.icon-coeur:hover .fa-beat {
   -webkit-animation-name: grandissement;
           animation-name: grandissement;
   display: flex;
@@ -110,6 +116,10 @@ footer .liste-footer {
           animation-duration: 0.5s;
   -webkit-animation-iteration-count: 1;
           animation-iteration-count: 1;
+}
+.icon-coeur:hover .fa-beat:active {
+  background-image: linear-gradient(0deg, rgb(255, 121, 218) 0%, rgb(147, 86, 220) 100%);
+  background-image: -moz-linear-gradient(90deg, rgb(255, 121, 218) 0%, rgb(147, 86, 220) 100%);
 }
 
 body {
