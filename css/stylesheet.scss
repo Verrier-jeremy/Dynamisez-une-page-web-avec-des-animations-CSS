@@ -2,6 +2,7 @@
 @import "_couleur.scss";
 @import "_header&footer.scss";
 @import "_icon-coeur.scss";
+@import "_chargement-page.scss";
 
 body{
     margin: 0;
@@ -15,6 +16,7 @@ h2 {
 
 h3 {
     margin-bottom: 0;
+    font-size: 18px;
 }
 
 p {
@@ -35,7 +37,7 @@ article {
 }
 
 section {
-    padding: 40px 30px;
+    
     width: 100%;
 }
 
@@ -47,33 +49,35 @@ div {
     font-family: 'roboto', Arial, Helvetica, sans-serif;
     display: flex;
     justify-content: center;
-    padding-right: 35px;
+    padding: 3px 32px 3px 0;
     background-color: $color-gris;
     color: $color-gris-foncé ;
-    box-shadow: 0px -3px 3px rgba(0, 0, 0, 0.3);
+    box-shadow: inset 0px 3px 3px rgba(50, 50, 50, 0.3);
 
     h2 {
-        font-size: 18px;
+        font-size: 15px;
     }
 
     .fa-location-dot {
         margin-right: 20px;
+        font-size: 17px;
     }
 }
 
 .presentation {
     text-align: center;
     background-color: $color-gris-clair;
-    height: 270px;
-    padding: 25px;
+    height: 263px;
+    padding: 12px;
 
     h2 {
-        margin: 25px 8% 20px 8%;
+        margin: 24px 15% 0px 13%;
     }
 
     p {
         font-size: 18px;
-        margin-bottom: 35px;
+        margin-bottom: 30px;
+        margin-top: 10px;
     }
 
     button {
@@ -81,9 +85,16 @@ div {
         background: linear-gradient(170deg, rgba(255, 121, 218, 1) 0%, rgba(147, 86, 220, 1) 80%);
         padding: 15px 25px;
         border-radius: 30px 30px;
-        font-size: 20px;
+        font-size: 16px;
         border: none;
     } 
+}
+
+.fonctionnement{
+    padding: 25px 22px 45px 22px;
+    h2{
+        margin-bottom: 28px;
+    }
 }
 
 .etapes_commande {
@@ -92,8 +103,8 @@ div {
     box-shadow: 5px 5px 5px #35353522;
     border-radius: 20px 20px;
     width: 100%;
-    height: 80px;
-    margin-bottom: 30px;
+    height: 72px;
+    margin-bottom: 25px;
     margin-left: 8px;
     display: flex;
     justify-content: start;
@@ -102,17 +113,18 @@ div {
     i {
         margin: 0 20px;
         font-size: 17px;
-        color: $color-gris-icon;    
+        color: $color-gris-icon; 
+        width : 17px;   
     }
     span {
         display: flex;
         background-color: $color-primaire;
         color: white;
         border-radius: 50% 50%;
-        width: 25px;
-        height: 25px;
+        width: 23px;
+        height: 23px;
         margin-left: -10px;
-        font-size: 17px;
+        font-size: 13px;
         justify-content: center;
         align-items: center;
         font-weight: normal;
@@ -138,13 +150,14 @@ div {
     }
 
 #restaurants {
+    padding: 24px 22px;
     background-color: $color-gris-clair;
-    width: 100%;
-    padding-top: 30px;
-    padding-bottom: 60px;
+    h2{
+        margin-top: 27px;
+    }
 
     .choix_restaurant {
-        max-width: 400px;
+        max-width: 500px;
         min-width: 300px;
         border-radius: 20px 20px;
         border: 1px solid #ccc;
@@ -156,7 +169,7 @@ div {
 
     img {
         width: 100%;
-        height: 185px;
+        height: 172px;
         object-fit: cover;
         object-position: bottom;
         
@@ -177,23 +190,25 @@ div {
         justify-content: center;
         align-items: center;
         position: relative;
-        top: -175px;
-        left: 74%;
+        top: -161px;
+        left: 73%;
         color: #028867;
-        background-color: $color-terciaire;
+        background-color: #99E2D0;
         width: 80px;
-        height: 25px;
+        height: 18px;
         border-radius: 2px;
-        padding: 5px 0px
+        padding: 5px 0px;
+        font-size: 13px;
+        font-weight: bold;
     }
 
     .texte-et-icon {
         display: flex;
-        margin-top: 20px;
+        margin-top: 10px;
     }
 
     .nom_localisation {
-        margin-left:20px;
+        margin-left:12px;
     }
 
     p {
@@ -201,7 +216,7 @@ div {
         font-weight: 300;
     }
     i {
-        font-size: 28px;
+        font-size: 25px;
         cursor: pointer ;
         
     }

@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&family=Shrikhand&display=swap');
 @import "_couleur.scss";
 @import "_header&footer.scss";
-@import "_icon-coeur.scss";
-@import "_validation-menu.scss";
 @import "_animation-choix-carte.scss";
+@import "_validation-menu.scss";
+@import "_icon-coeur.scss";
 
 body{
     margin:0;
@@ -94,8 +94,6 @@ article{
         }        
     }
 
-    
-
     .choix-carte{
         cursor: pointer;
         width: 100%;
@@ -108,9 +106,8 @@ article{
         padding: 15px 15px 0 10px;
         margin-bottom: 20px;
         overflow: hidden;
-          
-          
     }
+   
     .description{
         animation-duration: 500ms;
         animation-timing-function: linear;
@@ -119,40 +116,25 @@ article{
         white-space: nowrap;
         width: 80%;
     }
+
     .descriptif-prix{       
         display: flex;
         justify-content: space-between;
         width: 100%;       
-        }   
+    }   
+
     .prix{
         margin-left: auto;
         padding-left:15px;
         margin-right:10px;
 
     }
+
     h4{
         font-size: 18px;
         margin: 0 -10px -10px 0;
         font-weight: bold;
     }
-    .animation-selection{
-        position: relative;
-        left: 80px;
-        top: -27px;
-        display: flex;
-        justify-content:center;
-        align-items: center;
-        width: 0px;
-        height: 78px;
-        margin-bottom: -32px;
-        background-color:$color-vert-clair;
-        color: $color-vert-clair;
-        animation:all 02s  ease;
-    }
-    .fa-circle-check{
-        background-color: white;
-        border-radius: 50%;
-        font-size: 28px;
-    }
+    
   
 }

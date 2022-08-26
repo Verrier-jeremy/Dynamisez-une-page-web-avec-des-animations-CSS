@@ -1,5 +1,5 @@
 
-@keyframes choix-1 {
+@keyframes choix-1{
     0%{
         transform: translateY(30px);
         opacity: 0;
@@ -10,12 +10,12 @@
     }
 }
 
-@keyframes choix-2 {
+@keyframes choix-2{
     0%{
-        transform: translateY(30px);
+        transform: translateY(45px);
         opacity: 0;   
     }
-    33%{
+    40%{
         opacity: 0;
     }
     100%{
@@ -24,35 +24,85 @@
     }
 }
 
-@keyframes choix-3 {
+@keyframes choix-3{
     0%{
-        transform: translateY(30px);
+        transform: translateY(60px);
         opacity: 0;     
-    }
-    50%{
+    }   
+    55%{
         opacity: 0;
     }
     
     100%{
         transform: translateY(0px);
-    opacity: 1;
+        opacity: 1;
     }
 }
 
   
-
+.liste-entrees{
     .choix-1{
         
-        animation-name: choix-1 ;
+        animation-name: choix-1;
         animation-duration: 1s;
     }
-
     .choix-2{
        
-        animation-name: choix-2 ;
+        animation-name: choix-2;
         animation-duration: 1s;
     }
     .choix-3{
-        animation-name: choix-3 ;
+        animation-name: choix-3;
         animation-duration: 1s;
     }
+}
+
+.liste-plats{
+    
+    .choix-1{
+        opacity: 0;
+        animation-fill-mode: forwards;
+        animation-delay: 0.5s;
+        animation-name: choix-1;
+        animation-duration: 1s;
+    }
+    .choix-2{
+        opacity: 0;
+        animation-fill-mode: forwards;
+        animation-delay: 0.5s;
+        animation-name: choix-2;
+        animation-duration: 1s;
+    }
+    .choix-3{
+        opacity: 0;
+        animation-fill-mode: forwards;
+        animation-delay: 0.5s;
+        animation-name: choix-3;
+        animation-duration: 1s;
+    }
+}
+
+.liste-desserts{
+    
+    .choix-1{
+        opacity: 0;
+        animation-fill-mode: forwards;
+        animation-delay: 1s;
+        animation-name: choix-1;
+        animation-duration: 1s;
+    }
+    .choix-2{
+        opacity: 0;
+        animation-fill-mode: forwards;
+        animation-delay: 1s;
+        animation-name: choix-2;
+        animation-duration: 1s;
+    }
+    .choix-3{
+        opacity: 0;
+        animation-fill-mode: forwards;
+        animation-delay: 1s;
+        animation-name: choix-3;
+        animation-duration: 1s;
+    }
+}
