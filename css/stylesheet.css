@@ -399,12 +399,17 @@ div {
 #restaurants {
   padding: 24px 22px;
   background-color: #f6f6f6;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
 #restaurants h2 {
   margin-top: 27px;
+  display: inline-block;
+  width: 100%;
 }
 #restaurants .choix_restaurant {
-  max-width: 500px;
+  max-width: 400px;
   min-width: 300px;
   border-radius: 20px 20px;
   border: 1px solid #ccc;
@@ -418,8 +423,9 @@ div {
   height: 172px;
   -o-object-fit: cover;
      object-fit: cover;
-  -o-object-position: bottom;
-     object-position: bottom;
+  -o-object-position: inherit;
+     object-position: inherit;
+  margin-bottom: -16px;
 }
 #restaurants .img-lanoteenchantée {
   -o-object-fit: cover;
@@ -436,7 +442,7 @@ div {
   justify-content: center;
   align-items: center;
   position: relative;
-  top: -161px;
+  top: -150px;
   left: 73%;
   color: #028867;
   background-color: #99E2D0;
