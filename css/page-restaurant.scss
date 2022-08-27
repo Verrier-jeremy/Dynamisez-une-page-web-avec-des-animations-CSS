@@ -36,19 +36,26 @@ header{
 }
 
 article{
+
     img{
+        @media screen and (min-width:820px)and (max-width:1000px){
+            max-height: 450px;
+        }
+        @media screen and (min-width:1000px){
+            max-height: 600px;
+        }
         object-fit: cover;
-        width: 100%;
+        object-position: bottom;
+        width: 100%; 
+        max-height:340px;
         margin-bottom: -26px;
         position : relative;
-        z-index: -1;
+        z-index: -1  ;
         
     }
     .carte-restaurant{
         background-color: $color-gris-clair;
         border-radius: 20px 20px;
-        display: flex;
-        flex-direction: column;
         .commander{
             width: 100%;
             display: flex;
@@ -72,13 +79,16 @@ article{
         display: flex;
         align-items: baseline;
         justify-content: space-between;
-        padding: 0 20px;
+        padding-left:20px;
+        margin-right:60px;
         font-family: 'Shrikhand';
         font-size: 20px;
+        width: 100%;
         
         i{
             color: $color-gris-icon;
             font-size: 30px;
+            padding-right: 20px;
         }
     }
     
@@ -86,10 +96,23 @@ article{
 
 .liste{
     margin: 0 40px 10px 20px;
+
+    @media screen and ( min-width:1000px){
+        display: flex;
+        flex-wrap: wrap;
+        
+    }
+    
     
     h3{
         font-weight: 300;
+        display: inline-block;
+        width: 100%;
+        margin-bottom: 30px;
+        
+        
         span{
+            padding-bottom: 5px;
           border-bottom: 4px solid $color-vert-clair;  
         }        
     }
@@ -97,7 +120,7 @@ article{
     .choix-carte{
         cursor: pointer;
         width: 100%;
-        display: flex;
+        display: inline-block;
         flex-direction: column;  
         justify-content: space-between;
         background-color: white;
