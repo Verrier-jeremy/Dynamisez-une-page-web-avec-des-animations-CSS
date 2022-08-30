@@ -459,8 +459,8 @@ article .titre-restaurant i {
 }
 @media screen and (min-width: 1000px) {
   .liste {
-    display: inline;
-    width: 27%;
+    width: 28%;
+    margin: 0 3% 0 20px;
   }
 }
 .liste h3 {
