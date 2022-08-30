@@ -370,7 +370,6 @@ header {
   align-items: baseline;
   width: 100%;
   padding: -10px 30px;
-  font-size: 35px;
 }
 header button {
   border-style: none;
@@ -406,12 +405,21 @@ article img {
 }
 @media screen and (min-width: 1000px) {
   article img {
-    max-height: 600px;
+    max-height: 500px;
+    -o-object-position: center;
+       object-position: center;
   }
 }
 article .carte-restaurant {
   background-color: #f6f6f6;
   border-radius: 20px 20px;
+}
+@media screen and (min-width: 1000px) {
+  article .carte-restaurant {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+  }
 }
 article .carte-restaurant .commander {
   width: 100%;
@@ -451,8 +459,8 @@ article .titre-restaurant i {
 }
 @media screen and (min-width: 1000px) {
   .liste {
-    display: flex;
-    flex-wrap: wrap;
+    display: inline;
+    width: 27%;
   }
 }
 .liste h3 {

@@ -120,8 +120,8 @@ footer .liste-footer {
 .chargement {
   -webkit-animation-name: chargement;
           animation-name: chargement;
-  -webkit-animation-duration: 6s;
-          animation-duration: 6s;
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
   position: absolute;
@@ -226,9 +226,14 @@ footer .liste-footer {
   }
 }
 .chargement-animation label {
-  font-size: 50px;
+  font-size: 32px;
   opacity: 0;
   display: inline-block;
+}
+@media screen and (min-width: 1000px) {
+  .chargement-animation label {
+    font-size: 50px;
+  }
 }
 
 .chargement-animation label:nth-child(6) {
@@ -419,6 +424,11 @@ div {
   flex-wrap: wrap;
   justify-content: space-evenly;
 }
+@media screen and (min-width: 1000px) {
+  #restaurants {
+    justify-content: center;
+  }
+}
 #restaurants h2 {
   margin-top: 27px;
   display: inline-block;
@@ -435,12 +445,13 @@ div {
 }
 @media screen and (min-width: 820px) and (max-width: 1000px) {
   #restaurants .choix_restaurant {
-    width: 325px;
+    width: 40%;
   }
 }
 @media screen and (min-width: 1000px) {
   #restaurants .choix_restaurant {
-    width: 320px;
+    width: 330px;
+    margin-right: 20px;
   }
 }
 #restaurants img {

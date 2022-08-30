@@ -1,6 +1,6 @@
 .chargement {
     animation-name:chargement ;
-    animation-duration: 6s;
+    animation-duration: 5s;
     animation-fill-mode: forwards;
     position: absolute;
     top: 0;
@@ -68,9 +68,12 @@
   }
 
  .chargement-animation label {
-    font-size: 50px;
+    font-size: 32px;
     opacity: 0;
     display:inline-block;
+    @media screen and (min-width: 1000px) {
+      font-size: 50px;
+  }
   }
 
   .chargement-animation label:nth-child(6) {

@@ -15,7 +15,6 @@ header{
     align-items: baseline;
     width: 100%;
     padding: -10px 30px;
-    font-size: 35px;
     
     button{
         border-style: none;
@@ -42,7 +41,8 @@ article{
             max-height: 450px;
         }
         @media screen and (min-width:1000px){
-            max-height: 600px;
+            max-height: 500px;
+            object-position: center;
         }
         object-fit: cover;
         object-position: bottom;
@@ -56,6 +56,13 @@ article{
     .carte-restaurant{
         background-color: $color-gris-clair;
         border-radius: 20px 20px;
+        @media screen and (min-width: 1000px) {  
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        }
+        
+        
         .commander{
             width: 100%;
             display: flex;
@@ -96,12 +103,10 @@ article{
 
 .liste{
     margin: 0 40px 10px 20px;
-
-    @media screen and ( min-width:1000px){
-        display: flex;
-        flex-wrap: wrap;
-        
-    }
+    @media screen and (min-width: 1000px) {  
+        display: inline;
+        width: 27%;
+        }
     
     
     h3{

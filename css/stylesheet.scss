@@ -170,6 +170,9 @@ div {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
+    @media screen and (min-width: 1000px) {
+        justify-content: center;
+    }
     
     h2{
         margin-top: 27px;
@@ -181,16 +184,16 @@ div {
 
       
         @media screen and (min-width: 820px) and (max-width: 1000px) {            
-            width : 325px;    
+            width : 40%;    
         }
         @media screen and (min-width: 1000px) {
-            width:320px;
+            width:330px;
+            margin-right: 20px;
         }
         width :100%;
         border-radius: 20px 20px;
         border: 1px solid #ccc;
         overflow: hidden;
-
         margin-bottom: 20px;
         background-color: #fff;
         box-shadow: 5px 5px 5px #35353522;
