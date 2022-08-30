@@ -437,6 +437,11 @@ article .carte-restaurant button {
   border: none;
   cursor: pointer;
   margin: 20px 0 60px 0;
+  box-shadow: 0px 5px 10px #ccc;
+}
+article .carte-restaurant button:hover {
+  box-shadow: 5px 10px 10px #ccc;
+  background: linear-gradient(170deg, rgb(255, 147, 225) 0%, rgb(168, 119, 227) 80%);
 }
 article .titre-restaurant {
   display: flex;
