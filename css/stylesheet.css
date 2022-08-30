@@ -120,8 +120,8 @@ footer .liste-footer {
 .chargement {
   -webkit-animation-name: chargement;
           animation-name: chargement;
-  -webkit-animation-duration: 5s;
-          animation-duration: 5s;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
   position: absolute;
