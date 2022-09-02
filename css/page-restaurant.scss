@@ -11,16 +11,7 @@ body{
 }
 
 header{
-    display: flex;
-    align-items: baseline;
-    width: 100%;
-    padding: -10px 30px;
-    
-    button{
-        border-style: none;
-        background-color:white;
-       
-    }
+   
     a{
         text-decoration: none;
          cursor: pointer;
@@ -29,8 +20,6 @@ header{
         display: flex;
         justify-content: center;
         width: 100%;
-        margin-left: -50px;
-        font-family: 'Shrikhand';
     }
 }
 
