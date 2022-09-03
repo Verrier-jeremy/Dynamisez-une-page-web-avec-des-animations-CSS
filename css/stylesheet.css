@@ -125,7 +125,7 @@ footer .liste-footer {
           animation-duration: 3s;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   height: 100vh;
@@ -468,6 +468,7 @@ div {
   -o-object-position: inherit;
      object-position: inherit;
   margin-bottom: -16px;
+  z-index: -2;
 }
 #restaurants .img-lanoteenchantée {
   -o-object-fit: cover;
@@ -486,6 +487,7 @@ div {
   position: relative;
   top: -150px;
   left: 73%;
+  z-index: -1;
   color: #028867;
   background-color: #99E2D0;
   width: 80px;

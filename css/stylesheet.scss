@@ -212,6 +212,7 @@ div {
         object-fit: cover;
         object-position:inherit;
         margin-bottom: -16px;
+        z-index: -2;
         
     }
 
@@ -232,6 +233,7 @@ div {
         position: relative;
         top: -150px;
         left: 73%;
+        z-index: -1;
         color: #028867;
         background-color: #99E2D0;
         width: 80px;
